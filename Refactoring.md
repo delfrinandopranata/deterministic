@@ -9,3 +9,9 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+<img width="1630" alt="image" src="https://user-images.githubusercontent.com/35441828/181826334-061ac7d9-ee23-44e4-96d7-3532a570dd40.png">
+
+- Added some unit test with view scenario
+- Its a bit hard to do refactoring to make it more clean and readable because exising code is already simple enough
+- Delete the last checking `(candidate.length > MAX_PARTITION_KEY_LENGTH)` because after few testing, that condition never happen
